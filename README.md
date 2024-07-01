@@ -29,6 +29,11 @@ $ docker-compose up -d
 $ yarn start:prod
 ```
 
+## Build BD with seed
+```
+http://localhost:3000/api/v2/seed
+```
+
 ## Stack used
 * MongoDB
 * Nest
