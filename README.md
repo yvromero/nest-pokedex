@@ -4,35 +4,37 @@
 
 
 
-## Run in development
+## Development Environment Setup
 
 Clone the repository
 
-# Running the app
+```git clone```
 
-## development
+## Install Dependencies
+
+## Development
 ```
 yarn install
 ```
 
-## dev watch mode
+## Start the Application in Development Mode
 ```
 yarn start:dev
 ```
 
-## Instalar nest.js CLI: Command line interface
+## Install Nest.js CLI: Command line interface
 ```
 npm i -g @nestjs/cli
 ```
 
 
-## Levantar la DB
+## Set Up the Database
 ```
 docker-compose up -d
 ```
 
 
-## production mode
+## Production mode
 ```
 yarn start:prod
 ```
@@ -43,7 +45,13 @@ yarn start:prod
 http://localhost:3000/api/v2/seed
 ```
 
-## Stack used
+## Technology Stack
 * MongoDB
-* Nest
+* Nest.js
+* Docker
 
+
+## Production Build
+1. Create the file ```.env.prod```
+2. Set environment variables in env.prod
+3. Build the production image ``` docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build ```
