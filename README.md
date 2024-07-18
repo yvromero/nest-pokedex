@@ -6,30 +6,39 @@
 
 ## Run in development
 
-1. Clone the repository
+Clone the repository
 
-## Running the app
+# Running the app
 
-```bash
-# development
-$ yarn install
+## development
+```
+yarn install
+```
 
-# watch mode
-$ yarn start:dev
+## dev watch mode
+```
+yarn start:dev
+```
 
-```bash
-# Instalar nest.js CLI: Command line interface
-$ npm i -g @nestjs/cli
+## Instalar nest.js CLI: Command line interface
+```
+npm i -g @nestjs/cli
+```
 
-```bash
-# Levantar la DB
-$ docker-compose up -d
 
-# production mode
-$ yarn start:prod
+## Levantar la DB
+```
+docker-compose up -d
+```
+
+
+## production mode
+```
+yarn start:prod
 ```
 
 ## Build BD with seed
+
 ```
 http://localhost:3000/api/v2/seed
 ```
